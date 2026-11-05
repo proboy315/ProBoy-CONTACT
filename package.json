@@ -1,0 +1,8 @@
+{
+  "name": "proboy-contact",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Contact form API for proboy.vercel.app - sends submissions to Shahan via Resend",
+  "main": "index.js",
+  "engines": { "node": ">=18" }
+}
