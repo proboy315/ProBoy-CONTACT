@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>New contact message</title>
+</head>
+<body style="margin:0;padding:0;background-color:#07070a;font-family:Inter,'Segoe UI',Helvetica,Arial,sans-serif;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;color:#07070a;">{{name}}: {{subject}}</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#07070a" style="background-color:#07070a;">
+<tr><td align="center" style="padding:30px 12px;">
+  <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background-color:#0c0c11;border:1px solid #2a1a21;border-radius:22px;overflow:hidden;">
+
+    <tr><td height="5" style="height:5px;line-height:5px;font-size:0;background-color:#ef0034;background-image:linear-gradient(90deg,#b4002c,#ef0034,#ff7a8c,#ef0034,#b4002c);">&nbsp;</td></tr>
+
+    <tr>
+      <td align="center" style="padding:32px 30px 6px;background-color:#0c0c11;background-image:radial-gradient(ellipse at 50% 0%,#3a0a16 0%,#0c0c11 70%);">
+        <div style="font-size:30px;font-weight:800;letter-spacing:6px;color:#ffffff;line-height:1;">
+          <span style="color:#e11d2e;">&#9654;</span>&nbsp;PRO<span style="color:#ef0034;">BOY</span>
+        </div>
+        <div style="margin-top:18px;display:inline-block;padding:7px 18px;border:1px solid #ef0034;border-radius:30px;background-color:#2a0610;font-size:11px;font-weight:700;letter-spacing:3px;color:#ff5a77;text-transform:uppercase;">
+          &#128236; New Contact Message
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:24px 36px 0;">
+        <p style="margin:0;font-size:12px;letter-spacing:2px;color:#8b8d9b;text-transform:uppercase;">Subject</p>
+        <h1 style="margin:6px 0 0;font-size:26px;line-height:1.25;font-weight:800;color:#ffffff;">{{subject}}</h1>
+        <div style="width:60px;height:3px;background-color:#ef0034;margin-top:14px;border-radius:3px;"></div>
+      </td>
+    </tr>
+
+    <!-- Sender details -->
+    <tr>
+      <td style="padding:22px 36px 0;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#13131a;border:1px solid #26262f;border-radius:14px;">
+          <tr>
+            <td style="padding:14px 20px 4px;font-size:11px;letter-spacing:2px;color:#71737f;text-transform:uppercase;">Name</td>
+          </tr>
+          <tr>
+            <td style="padding:0 20px 12px;font-size:16px;font-weight:600;color:#ffffff;border-bottom:1px solid #22222b;">{{name}}</td>
+          </tr>
+          <tr>
+            <td style="padding:12px 20px 4px;font-size:11px;letter-spacing:2px;color:#71737f;text-transform:uppercase;">Email</td>
+          </tr>
+          <tr>
+            <td style="padding:0 20px 12px;font-size:15px;border-bottom:1px solid #22222b;"><a href="{{mailto}}" style="color:#ff5a77;text-decoration:none;">{{email}}</a></td>
+          </tr>
+          <tr>
+            <td style="padding:12px 20px 4px;font-size:11px;letter-spacing:2px;color:#71737f;text-transform:uppercase;">Phone / WhatsApp</td>
+          </tr>
+          <tr>
+            <td style="padding:0 20px 16px;font-size:15px;"><a href="{{tel}}" style="color:#ff5a77;text-decoration:none;">{{number}}</a></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- Message -->
+    <tr>
+      <td style="padding:18px 36px 4px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#13131a;border:1px solid #26262f;border-left:4px solid #ef0034;border-radius:14px;">
+          <tr><td style="padding:20px 22px;font-size:16px;line-height:1.75;color:#e4e5ec;">{{message}}</td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- Actions -->
+    <tr>
+      <td align="center" style="padding:24px 36px 6px;">
+        <a href="{{mailto}}" style="display:inline-block;margin:4px;padding:14px 26px;border-radius:40px;background-color:#ef0034;background-image:linear-gradient(110deg,#ef0034,#e8596a);font-size:14px;font-weight:700;color:#ffffff;text-decoration:none;">Reply by Email &rarr;</a>
+        <a href="{{wa}}" style="display:inline-block;margin:4px;padding:13px 24px;border-radius:40px;border:1px solid #5a5a68;font-size:14px;font-weight:600;color:#ffffff;text-decoration:none;">WhatsApp</a>
+      </td>
+    </tr>
+
+    <tr><td align="center" style="padding:22px 30px 28px;font-size:11px;line-height:1.7;color:#6f717e;">
+      Received {{time}}<br>
+      Sent via proboy-contact API &middot; <a href="https://proboy.vercel.app" style="color:#ef0034;text-decoration:none;">proboy.vercel.app</a>
+    </td></tr>
+
+    <tr><td height="4" style="height:4px;line-height:4px;font-size:0;background-color:#ef0034;background-image:linear-gradient(90deg,#b4002c,#ef0034,#b4002c);">&nbsp;</td></tr>
+  </table>
+</td></tr>
+</table>
+</body>
+</html>
